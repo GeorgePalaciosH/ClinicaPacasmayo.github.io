@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f9;
+}
+
+/* Estilos del header y la navegación */
+header {
+    background-image: url('/img/hospital-ward-1338585_1920.jpg'); /* Cambia la ruta a tu imagen */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+    position: relative;
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+header h1, header nav, .header-content {
+    position: relative;
+    z-index: 2;
+}
+
+header h1 {
+    font-size: 4em;
+    margin: 0;
+    font-weight: bold;
+    color: #fff;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.header-content {
+    margin-top: 20px;
+}
+
+h2 {
+    font-size: 1.8em;
+    color: #0044cc;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header-content h2 {
+    color: #ffff; /* Cambia el color del texto a blanco */
+}
+
+
+/* Estilos para las secciones */
+section {
+    padding: 40px;
+    margin: 40px auto;
+    max-width: 3000px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+}
+
+#team p {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 1.1em;
+    color: #333;
+}
+
+/* Estilos para las tarjetas de servicios */
+.service-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    text-align: center;
+    overflow: hidden;
+    margin: 10px;
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card h3 {
+    color: #0044cc;
+    margin-top: 10px;
+}
+
+.card p {
+    padding: 0 10px 15px;
+}
+
+/* Estilos para la sección de contacto */
+#contact {
+   
+    background-color: #f9f9ff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 3000px;
+    margin: 40px auto;
+    text-align: left; /* Alinea el texto a la izquierda */
+    box-sizing: border-box;
+   
+}
+
+#contact h2 {
+    font-size: 2em;
+    color: #0044cc;
+    margin-bottom: 20px;
+    text-align: left; /* Alinea el título a la izquierda */
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinea los elementos a la izquierda */
+    gap: 15px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.1em;
+    color: #333;
+}
+
+.contact-icon {
+    font-size: 1.5em;
+    color: #0044cc;
+}
+
+/* Estilos del footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+.team-photo {
+    display: flex;
+    justify-content: center; /* Centra la imagen horizontalmente */
+    margin-top: 15px;
+}
+
+.team-photo img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .service-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

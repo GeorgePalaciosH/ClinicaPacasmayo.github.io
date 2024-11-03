@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLINICA PACASMAYO</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>ClinicaPacasmayo</h1>
+            <ul>
+                <li><a href="#services">Servicios</a></li>
+                <li><a href="#team">Nuestro Equipo</a></li>
+                <li><a href="#contact">Contáctanos</a></li>
+            </ul>
+        </nav>
+        <div class="header-content">
+            <h2>Atención médica de calidad para toda la familia</h2>
+        </div>
+    </header>
+
+    <section id="services">
+        <h2>Servicios</h2>
+        <div class="service-cards">
+            <div class="card">
+                <img src="img/consulta.jpg" alt="Consulta General">
+                <h3>Consulta General</h3>
+                <p>Atención personalizada para todas tus necesidades médicas.</p>
+            </div>
+            <div class="card">
+                <img src="img/odontologia.jpg" alt="Odontología">
+                <h3>Odontología</h3>
+                <p>Cuidado dental completo para una sonrisa saludable.</p>
+            </div>
+            <div class="card">
+                <img src="img/cardiologia.jpg" alt="Cardiología">
+                <h3>Cardiología</h3>
+                <p>Evaluaciones cardíacas con equipos de última generación.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="team">
+        <h2>Nuestro Equipo</h2>
+        <div class="team-photo">
+            <img src="img/EquipoMedico.jpg" alt="Equipo médico">
+        </div>
+        <p>Contamos con un equipo de médicos especializados y dedicados a cuidar de tu salud.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contáctanos</h2>
+        <div class="contact-info">
+            <div class="contact-item">
+                <span class="contact-icon">📞</span>
+                <p>Teléfono: +51 954380327</p>
+            </div>
+            <div class="contact-item">
+                <span class="contact-icon">📧</span>
+                <p>Email: contacto@clinicapacasmayo.com</p>
+            </div>
+            <div class="contact-item">
+                <span class="contact-icon">📍</span>
+                <p>Dirección: Av. Principal 123, Pacasmayo</p>
+            </div>
+        </div>
+        <h2>Integrantes</h2>
+        <div class="contact-info">
+            <div class="contact-item">
+                <span class="contact-icon">★</span>
+                <p>GALVEZ LUNA JASSON ANDERSON (A)</p>
+            </div>
+            <div class="contact-item">
+                <span class="contact-icon">★</span>
+                <p>NORIEGA OLIVA CHRISTIAN ALFREDO (A)</p>
+            </div>
+            <div class="contact-item">
+                <span class="contact-icon">★</span>
+                <p>PALACIOS HERNANDEZ GEORGE ELVIS (A)</p>
+            </div>
+            <div class="contact-item">
+                <span class="contact-icon">★</span>
+                <p>VAZQUES PERES ISAIAS FERNANDO RAUL (A)</p>
+            </div>
+        </div>
+    </section>
+    <script>
+        window.watsonAssistantChatOptions = {
+          integrationID: "04a505c6-ebc5-4cb2-80dd-4b0fe16c0f2a", // The ID of this integration.
+          region: "us-south", // The region your integration is hosted in.
+          serviceInstanceID: "bb0fb23b-9047-4fc6-838c-da9b45e254d8", // The ID of your service instance.
+          onLoad: async (instance) => { await instance.render(); }
+        };
+        setTimeout(function(){
+          const t=document.createElement('script');
+          t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+          document.head.appendChild(t);
+        });
+      </script>
+    <footer>
+        <p>&copy; 2024 ClinicaPacasmayo. Todos los derechos reservados.</p>
+    </footer>
+</body>
+<link rel="stylesheet" href="estilos.css">
+</html>
