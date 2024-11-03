@@ -13,7 +13,7 @@ body {
 
 /* Estilos del header y la navegación */
 header {
-    background-image: url('/img/hospital-ward-1338585_1920.jpg'); /* Cambia la ruta a tu imagen */
+    background-image: url('img/hospital-ward-1338585_1920.jpg'); /* Cambia la ruta a tu imagen */
     background-size: cover;
     background-position: center;
     color: #fff;
